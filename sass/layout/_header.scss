@@ -10,6 +10,14 @@
     justify-content: space-between;
 }
 
+.header__buttons > .buttons {
+    margin-left: 14px;
+}
+
+.header__buttons > .buttons:first-child {
+    margin-left: 0px;
+}
+
 .navigation {
     display: flex; 
     font-size: 1.5rem;
