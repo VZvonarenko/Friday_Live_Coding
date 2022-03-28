@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/VZvonarenko/Friday_Live_Coding/issues"
   },
-  "homepage": "https://github.com/VZvonarenko/Friday_Live_Coding#readme"
+  "homepage": "https://github.com/VZvonarenko/Friday_Live_Coding#readme",
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
 }

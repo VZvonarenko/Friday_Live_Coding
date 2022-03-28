@@ -1,33 +1,64 @@
-button {
-    font-family: 'Open Sans', Verdana, sans-serif;
+
+.button {
+    @extend %font-prim;
     padding: 11px 25px 13px;
     font-style: normal;
     font-weight: 600;
-    font-style: 1.6rem;
+    font-size: 1.6rem;
     line-height: 2.2rem;
     border-radius: 4px;
     cursor: pointer;
-    transition: all 0.3s;
+    @extend %transition;
+    &_bordered {
+        background: $color-light;
+        border: 1px solid $color-border;
+        color: $color-text;
+        &:hover {
+            background: $color-hovered;
+            border-color: $color-hovered;
+        }
+    }
+    &_colored {
+        background: $color-primary;
+        color: $color-light;
+        border: 1px solid $color-primary;
+        &:hover {
+            background: $color-additional;
+            border-color: $color-additional;
+        }
+    }
 }
 
-.button_bordered {
-    background: $color-light;
-    border: 1px solid $color-border;
-    color: $color-text;
-}
+// button {
+//     font-family: 'Open Sans', Verdana, sans-serif;
+//     padding: 11px 25px 13px;
+//     font-style: normal;
+//     font-weight: 600;
+//     font-style: 1.6rem;
+//     line-height: 2.2rem;
+//     border-radius: 4px;
+//     cursor: pointer;
+//     transition: all 0.3s;
+// }
 
-.button_colored {
-    background-color: $color-primary;
-    color: $color-light;
-    border: 1px solid $color-border;
-}
+// .button_bordered {
+//     background: $color-light;
+//     border: 1px solid $color-border;
+//     color: $color-text;
+// }
 
-.button_colored:hover {
-    background-color: $color-additional;
-    border-color: $color-additional;
-}
+// .button_colored {
+//     background-color: $color-primary;
+//     color: $color-light;
+//     border: 1px solid $color-border;
+// }
 
-.button_bordered:hover {
-    background-color: $color-hovered;
-    border-color: $color-hovered;
-}
+// .button_colored:hover {
+//     background-color: $color-additional;
+//     border-color: $color-additional;
+// }
+
+// .button_bordered:hover {
+//     background-color: $color-hovered;
+//     border-color: $color-hovered;
+// }
