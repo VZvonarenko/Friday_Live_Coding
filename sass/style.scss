@@ -2,15 +2,12 @@
 @import "abstract/constants";
 @import "abstract/mixins";
 @import "abstract/placeholder";
-
-
 @import "base/base";
 @import "base/buttons";
 @import "base/logo";
-
-
+@import "base/icons";
 @import "layout/wrapper";
 @import "layout/header";
-
 @import "components/contacts-us";
 @import "components/promo";
+@import "components/navigation";

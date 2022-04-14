@@ -417,12 +417,20 @@ ul {
   box-sizing: border-box;
 }
 
-.logo-path {
+.navigation__link, .logo-path, .button {
   transition: all 0.3s ease-out;
 }
 
-h1 {
+.promo_text, .link-button, h1 {
   font-family: "Poppins", Verdana, sans-serif;
+}
+
+.navigation__link, .logo-path, .button {
+  transition: all 0.3s ease-out;
+}
+
+.button, body {
+  font-family: "Open Sans", Verdana, sans-serif;
 }
 
 html {
@@ -431,7 +439,10 @@ html {
 
 body {
   font-size: 1.6rem;
-  font-family: "Open Sans", Verdana, sans-serif;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 2.6rem;
 }
 
 h1 {
@@ -469,38 +480,51 @@ h5 {
   line-height: 2.6rem;
 }
 
-button {
-  font-family: "Open Sans", Verdana, sans-serif;
+.button {
   padding: 11px 25px 13px;
   font-style: normal;
   font-weight: 600;
-  font-style: 1.6rem;
+  font-size: 1.6rem;
   line-height: 2.2rem;
   border-radius: 4px;
   cursor: pointer;
-  transition: all 0.3s;
 }
-button_bordered {
+.button_bordered {
   background: #ffffff;
   border: 1px solid #D7D7D7;
   color: #544837;
 }
-button_bordered:hover {
-  background-color: #FF7549;
+.button_bordered:hover {
+  background: #BCD0E5;
+  border-color: #BCD0E5;
+}
+.button_colored {
+  background: #FF9900;
+  color: #ffffff;
+  border: 1px solid #FF9900;
+}
+.button_colored:hover {
+  background: #FF7549;
   border-color: #FF7549;
 }
-button_colored {
-  background-color: #FF9900;
-  color: #ffffff;
-  border: 1px solid #D7D7D7;
-}
-button_colored:hover {
-  background-color: #BCD0E5;
-  border-color: #BCD0E5;
+
+.link-button {
+  color: #FF9900;
 }
 
 .logo-svg:hover .logo-path {
   fill: #FF9900;
+}
+
+.ico {
+  cursor: pointer;
+  display: inline-block;
+}
+
+.ico_play {
+  background-image: url("../img/icons/play.svg");
+  width: 18px;
+  height: 19px;
 }
 
 .wrapper {
@@ -528,18 +552,6 @@ button_colored:hover {
   margin-left: 0px;
 }
 
-.navigation {
-  display: flex;
-  font-size: 1.5rem;
-  line-height: 2.8rem;
-}
-
-.navigation__link {
-  list-style: none;
-  padding: 0 10px;
-  cursor: pointer;
-}
-
 .contact-us {
   background: #FFEEE1;
 }
@@ -562,8 +574,32 @@ button_colored:hover {
   margin: 0 0 30px;
 }
 
+.promo_text {
+  max-width: 487px;
+  margin: 0 0 45px;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 2.8rem;
+}
+
 .promo__buttons > * {
   margin-right: 44px;
+}
+
+.navigation {
+  display: flex;
+  font-size: 1.5rem;
+  line-height: 2.8rem;
+}
+
+.navigation__link {
+  list-style: none;
+  padding: 0 10px;
+  cursor: pointer;
+}
+.navigation__link:hover {
+  color: #FF9900;
 }
 
 /*# sourceMappingURL=style.css.map */
